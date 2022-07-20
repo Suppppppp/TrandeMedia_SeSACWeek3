@@ -23,6 +23,12 @@
 		AC605C8E2884DDF40023D46F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC605C8C2884DDF40023D46F /* LaunchScreen.storyboard */; };
 		AC605C962884F10D0023D46F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC605C952884F10D0023D46F /* Home.storyboard */; };
 		AC605C982884FE390023D46F /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC605C972884FE390023D46F /* HomeTableViewController.swift */; };
+		AC8B76C4288787190054A46F /* PracticeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B76C3288787190054A46F /* PracticeTableViewController.swift */; };
+		AC8B76C62887876D0054A46F /* PracticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B76C52887876D0054A46F /* PracticeTableViewCell.swift */; };
+		AC8B76C828878CAA0054A46F /* Practice_Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B76C728878CAA0054A46F /* Practice_Movie.swift */; };
+		AC8B76CA288795350054A46F /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B76C9288795350054A46F /* MovieInfo.swift */; };
+		AC8B76CC28879AB40054A46F /* RecommendCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B76CB28879AB40054A46F /* RecommendCollectionViewController.swift */; };
+		AC8B76CE28879DFF0054A46F /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8B76CD28879DFF0054A46F /* RecommendCollectionViewCell.swift */; };
 		ACDF873228864010005E7DA3 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDF873128864010005E7DA3 /* Search.storyboard */; };
 		ACDF873428864042005E7DA3 /* Trend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDF873328864042005E7DA3 /* Trend.storyboard */; };
 		ACDF873628864088005E7DA3 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDF873528864088005E7DA3 /* Intro.storyboard */; };
@@ -49,6 +55,12 @@
 		AC605C8F2884DDF40023D46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC605C952884F10D0023D46F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		AC605C972884FE390023D46F /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		AC8B76C3288787190054A46F /* PracticeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewController.swift; sourceTree = "<group>"; };
+		AC8B76C52887876D0054A46F /* PracticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewCell.swift; sourceTree = "<group>"; };
+		AC8B76C728878CAA0054A46F /* Practice_Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_Movie.swift; sourceTree = "<group>"; };
+		AC8B76C9288795350054A46F /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		AC8B76CB28879AB40054A46F /* RecommendCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewController.swift; sourceTree = "<group>"; };
+		AC8B76CD28879DFF0054A46F /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 		ACDF873128864010005E7DA3 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		ACDF873328864042005E7DA3 /* Trend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trend.storyboard; sourceTree = "<group>"; };
 		ACDF873528864088005E7DA3 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
@@ -104,12 +116,18 @@
 				AC605C952884F10D0023D46F /* Home.storyboard */,
 				AC605C972884FE390023D46F /* HomeTableViewController.swift */,
 				ACFD6BE82885456E000A20F7 /* Setting.storyboard */,
+				AC8B76C52887876D0054A46F /* PracticeTableViewCell.swift */,
+				AC8B76C3288787190054A46F /* PracticeTableViewController.swift */,
+				AC8B76C9288795350054A46F /* MovieInfo.swift */,
+				AC8B76C728878CAA0054A46F /* Practice_Movie.swift */,
 				ACFD6BEA28854593000A20F7 /* SettingTableViewController.swift */,
 				ACDF873128864010005E7DA3 /* Search.storyboard */,
 				AC08C0FE2886440D0097B34C /* SearchViewController.swift */,
 				AC08C100288645310097B34C /* UIViewController+Extension.swift */,
 				AC08C1022886478E0097B34C /* UITextFeild+Extension.swift */,
 				ACDF873328864042005E7DA3 /* Trend.storyboard */,
+				AC8B76CD28879DFF0054A46F /* RecommendCollectionViewCell.swift */,
+				AC8B76CB28879AB40054A46F /* RecommendCollectionViewController.swift */,
 				AC17578828869AE400B61D0D /* Shopping.storyboard */,
 				AC17578A28869B1200B61D0D /* ShoppingTableViewController.swift */,
 				AC08C10628864D990097B34C /* BucketlistTableViewCell.swift */,
@@ -197,9 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8B76C62887876D0054A46F /* PracticeTableViewCell.swift in Sources */,
+				AC8B76CC28879AB40054A46F /* RecommendCollectionViewController.swift in Sources */,
 				AC08C101288645310097B34C /* UIViewController+Extension.swift in Sources */,
+				AC8B76C828878CAA0054A46F /* Practice_Movie.swift in Sources */,
+				AC8B76C4288787190054A46F /* PracticeTableViewController.swift in Sources */,
 				AC17578B28869B1200B61D0D /* ShoppingTableViewController.swift in Sources */,
 				AC08C10528864B9B0097B34C /* BucketTableViewController.swift in Sources */,
+				AC8B76CA288795350054A46F /* MovieInfo.swift in Sources */,
 				AC605C982884FE390023D46F /* HomeTableViewController.swift in Sources */,
 				AC08C1032886478E0097B34C /* UITextFeild+Extension.swift in Sources */,
 				AC08C0FF2886440D0097B34C /* SearchViewController.swift in Sources */,
@@ -209,6 +232,7 @@
 				AC08C0FD288643FA0097B34C /* TrendViewController.swift in Sources */,
 				AC08C10728864D990097B34C /* BucketlistTableViewCell.swift in Sources */,
 				ACFD6BEB28854593000A20F7 /* SettingTableViewController.swift in Sources */,
+				AC8B76CE28879DFF0054A46F /* RecommendCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
