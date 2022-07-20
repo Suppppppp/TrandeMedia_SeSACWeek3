@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Toast
+import Kingfisher
 
 /*
  TableView -> CollectionView
@@ -14,7 +16,10 @@ import UIKit
  */
 
 class RecommendCollectionViewController: UICollectionViewController {
-
+    
+    
+    var imageURL = "https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20220706_11%2F16570835075234anbO_JPEG%2Fmovie_image.jpg"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,8 +45,19 @@ class RecommendCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell
         
         cell.porsterImage.backgroundColor = .orange
+        
+        let url = URL(string: imageURL)
+        cell.porsterImage.kf.setImage(with: url)
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        view.makeToast("\(indexPath.item)번째 셀을 선택", duration:1, position: .center)
+
+        
+    }
+    
+    
 
 }
