@@ -48,7 +48,15 @@ class PracticeTableViewController: UITableViewController {
     
     
     
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let sb = UIStoryboard(name: "Trend", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: RecommendCollectionViewController.identifier) as! RecommendCollectionViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+    }
     
     
     

@@ -17,6 +17,8 @@ import Kingfisher
 
 class RecommendCollectionViewController: UICollectionViewController {
     
+    static let identifier = "RecommendCollectionViewController"
+    
     
     var imageURL = "https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20220706_11%2F16570835075234anbO_JPEG%2Fmovie_image.jpg"
     
@@ -42,7 +44,10 @@ class RecommendCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as! RecommendCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendCollectionViewCell", for: indexPath) as? RecommendCollectionViewCell else {
+            return UICollectionViewCell()
+        }
         
         cell.porsterImage.backgroundColor = .orange
         
