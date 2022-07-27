@@ -50,7 +50,7 @@ class SettingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
 
     }
     // MARK: - Number of section

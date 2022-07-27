@@ -15,7 +15,9 @@ class PracticeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+                        
 
 }
     
@@ -52,6 +54,9 @@ class PracticeTableViewController: UITableViewController {
         
         let sb = UIStoryboard(name: "Trend", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: RecommendCollectionViewController.identifier) as! RecommendCollectionViewController
+        
+
+        vc.movieData = movieList.movie[indexPath.row]
         
         self.navigationController?.pushViewController(vc, animated: true)
         

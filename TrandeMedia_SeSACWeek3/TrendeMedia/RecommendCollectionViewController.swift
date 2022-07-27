@@ -17,6 +17,9 @@ import Kingfisher
 
 class RecommendCollectionViewController: UICollectionViewController {
     
+    // 1. 값전달 - 데이터를 받을 공간(프로퍼티) 생성
+    var movieData: Movie?
+    
     static let identifier = "RecommendCollectionViewController"
     
     
@@ -24,6 +27,11 @@ class RecommendCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = movieData?.title
+        
+
+        
 
         // collection view가 화면에 보여지기 전에 셀크기 셀사이간격등 설정
         let layout = UICollectionViewFlowLayout()
